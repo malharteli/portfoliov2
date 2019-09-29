@@ -7,14 +7,21 @@ import MaterialImage from 'material-ui-image'
 const useStyles = makeStyles({
     layoutRoot: {},
     imageBox: {
-        width: `80%`,
+        width: `60%`,
         height: 'auto',
         display: 'flex',
-        alignItems: 'center',
-        'flex-direction' :'column',
+        alignItems: 'top',
+        'flex-direction' :'row',
         justifyContent: 'center',
-        textAlign: 'center',
+        textAlign: 'left',
         padding: 16
+    },
+    textBox: {
+        display: 'flex',
+        'flex-direction': 'column',
+    },
+    titlebox: {
+        position: '0px'
     },
     image: {
         height: `50px`,
@@ -31,9 +38,14 @@ function Image(props)
         <Card classes={{
             root: classes.imageBox
         }}>
-            <img style={{width:'inherit', height:'inherit'}} src={imgObj.image} />
-            <Typography className="flex items-center justify-between p-24" color="action" variant='h3'>{imgObj.title}</Typography>
-            <Typography className='justify-between p-24'>{imgObj.description}</Typography>
+            <img style={{width:'inherit', height:'inherit'}} src={imgObj.image} alt={imgObj.alt} />
+            <div classes={{
+                root: classes.textBox
+            }}>
+                <Typography className="flex items-center justify-between p-24" color="action" variant='h3'>{imgObj.title}</Typography>
+                <div className='p-24'></div>
+                <Typography className='justify-between p-24'>{imgObj.description}</Typography>
+            </div>
         </Card>
     )
 
