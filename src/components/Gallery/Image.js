@@ -42,7 +42,7 @@ function Image(props)
             <div classes={{
                 root: classes.textBox
             }}>
-                <Typography className="flex items-center justify-between p-24" color="action" variant='h3'>{imgObj.title}</Typography>
+                <Typography className="flex items-center justify-between p-24" variant='h3'>{imgObj.title}</Typography>
                 <div className='p-24'></div>
                 <Typography className='justify-between p-24'>{imgObj.description}</Typography>
             </div>
