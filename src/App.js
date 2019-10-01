@@ -8,15 +8,15 @@ import {MuiThemeProvider, createMuiTheme} from '@material-ui/core'
 const customTheme = createMuiTheme({
   typography: {
     fontFamily: [
-      "-apple-system", 
-      "BlinkMacSystemFont", 
-      "Segoe UI", 
-      "Roboto", 
+      "-apple-system",
+      "BlinkMacSystemFont",
+      "Segoe UI",
+      "Roboto",
       "Oxygen",
-      "Ubuntu", 
-      "Cantarell", 
-      "Fira Sans", 
-      "Droid Sans", 
+      "Ubuntu",
+      "Cantarell",
+      "Fira Sans",
+      "Droid Sans",
       "Helvetica Neue",
       "sans-serif"
     ].join(',')
@@ -37,11 +37,9 @@ const customTheme = createMuiTheme({
 function App() {
   return (
   <MuiThemeProvider theme={customTheme}>
+    <Header />
     <div className="App">
-      <header className="App-header">
-        <Header />
         <Image image='test'/>
-      </header>
     </div>
     </MuiThemeProvider>
   );
