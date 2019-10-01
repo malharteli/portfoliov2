@@ -1,5 +1,5 @@
 import React from 'react'
-import {Paper, Typography, BottomNavigation} from '@material-ui/core'
+import {Paper, Typography, Container, Link} from '@material-ui/core'
 import {makeStyles} from '@material-ui/styles'
 
 const styles =  makeStyles(theme=>({
@@ -12,18 +12,21 @@ const styles =  makeStyles(theme=>({
         paddingBottom: '2%',
         'flex-direction': 'column',
         'align-items': 'center',
-        color: 'white'
+        color: 'white',
+        borderRadius: '0',
     },
     headerText: {
         border: '16px solid white',
-        padding: '16px',
+        padding: '32px',
         color: 'white',
-        maxWidth: '66%',
+        maxWidth: '80%',
+        marginBottom: '2%',
     },
     linkBar: {
         display: 'flex',
         'flex-direction': 'row',
-        justifyContent: 'center'
+        justifyContent: 'space-around',
+        paddingTop: '15px'
     }
 
 
@@ -37,8 +40,14 @@ function Header(props){
             root: classes.navbar
         }}>
             <Typography classes= {{root: classes.headerText}}className="customfont flex items-center justify-between p-24" variant='h1'>Malhar Teli</Typography>
-            <Typography className="customfont flex items-center justify-between p-24" variant='subtitle1'>Full Stack Engineer</Typography>
-
+            <Typography className="customfont flex items-center justify-between p-24" variant='h5'>Full Stack Engineer</Typography>
+            <Container classes={{root:classes.linkBar}}>
+                <Link color='inherit' underline='hover' href='mailto:malhar.teli@gmail.com'>malhar.teli@gmail.com</Link>
+                <Link color='inherit' underline='hover'
+                href='https://linkedin.com/in/malharteli'>LinkedIn</Link>
+                <Link color='inherit' underline='hover' href='https://github.com/malharteli/'>Github</Link>
+                <Link color='inherit' underline='hover'>Cell: (617) 678-4014</Link>
+            </Container>
         </Paper>
     )
 }
