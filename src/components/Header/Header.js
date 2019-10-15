@@ -1,5 +1,5 @@
 import React from 'react'
-import {Paper, Typography, Container, Link} from '@material-ui/core'
+import {Paper, Typography, Container, Link, CssBaseline} from '@material-ui/core'
 import {makeStyles} from '@material-ui/styles'
 
 const styles =  makeStyles(theme=>({
@@ -26,7 +26,8 @@ const styles =  makeStyles(theme=>({
         display: 'flex',
         'flex-direction': 'row',
         justifyContent: 'space-around',
-        paddingTop: '15px'
+        paddingTop: '15px',
+        maxWidth: '80%'
     }
 
 
@@ -39,7 +40,8 @@ function Header(props){
         <Paper classes={{
             root: classes.navbar
         }}>
-            <Typography classes= {{root: classes.headerText}}className="customfont flex items-center justify-between p-24" variant='h1'>Malhar Teli</Typography>
+            <CssBaseline />
+            <Typography classes= {{root: classes.headerText}}className="customfont flex items-center justify-between p-24" variant='h1'>MALHAR TELI</Typography>
             <Typography className="customfont flex items-center justify-between p-24" variant='h5'>Full Stack Engineer</Typography>
             <Container classes={{root:classes.linkBar}}>
                 <Link color='inherit' underline='hover' href='mailto:malhar.teli@gmail.com'>malhar.teli@gmail.com</Link>

@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Image from './components/Gallery/Image'
 import Header from './components/Header/Header'
+import Sidebar from './components/Sidebar/Sidebar'
 import {MuiThemeProvider, createMuiTheme} from '@material-ui/core'
 
 
@@ -39,6 +40,7 @@ function App() {
   <MuiThemeProvider theme={customTheme}>
     <Header />
     <div className="App">
+        <Sidebar />
         <Image image='test'/>
     </div>
     </MuiThemeProvider>
