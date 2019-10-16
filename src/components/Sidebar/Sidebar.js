@@ -8,9 +8,11 @@ const styles = makeStyles(theme =>({
     display:'flex',
     backgroundColor: '#64b5f6',
     zIndex:5,
+    opacity: '50%',
     width: '25%',
     [theme.breakpoints.down('md')]:{
-      width: '0px'
+      width: '0px',
+      display:'none'
     }
   }
 }))

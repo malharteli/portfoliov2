@@ -3,6 +3,7 @@ import './App.css';
 import Image from './components/Gallery/Image'
 import Header from './components/Header/Header'
 import Sidebar from './components/Sidebar/Sidebar'
+import Body from './components/Body/Body'
 import {MuiThemeProvider, createMuiTheme} from '@material-ui/core'
 
 
@@ -40,8 +41,10 @@ function App() {
   <MuiThemeProvider theme={customTheme}>
     <Header />
     <div className="App">
+      <Body>
         <Sidebar />
         <Image image='test'/>
+      </Body>
     </div>
     </MuiThemeProvider>
   );
