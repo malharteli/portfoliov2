@@ -41,8 +41,8 @@ function Header(props){
             root: classes.navbar
         }}>
             <CssBaseline />
-            <Typography classes= {{root: classes.headerText}}className="customfont flex items-center justify-between p-24" variant='h1'>MALHAR TELI</Typography>
-            <Typography className="customfont flex items-center justify-between p-24" variant='h5'>Full Stack Engineer</Typography>
+            <Typography classes= {{root: classes.headerText}}className="customfont flex items-center justify-between p-24" fontStyle="bold" variant='h1'>MALHAR TELI</Typography>
+            <Typography className="customfont flex items-center justify-between p-24" fontStyle="bold" variant='h5'>Full Stack Engineer</Typography>
             <Container classes={{root:classes.linkBar}}>
                 <Link color='inherit' underline='hover' href='mailto:malhar.teli@gmail.com'>malhar.teli@gmail.com</Link>
                 <Link color='inherit' underline='hover'

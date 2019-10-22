@@ -6,14 +6,21 @@ import {makeStyles} from '@material-ui/styles'
 const styles = makeStyles(theme =>({
   sidebar:{
     display:'flex',
-    backgroundColor: '#64b5f6',
+    backgroundColor: 'rgba(122,180,193, 0.3)',
     zIndex:5,
-    opacity: '50%',
+    // opacity: '0.3',
     width: '25%',
     [theme.breakpoints.down('md')]:{
       width: '0px',
       display:'none'
     }
+  },
+  infobar:{
+    display: 'flex',
+    'flow-direction': 'column',
+  },
+  text:{
+    opacity: '1.0',
   }
 }))
 
@@ -24,7 +31,7 @@ function Sidebar(props){
     <Paper classes={{
       root: classes.sidebar
     }}>
-      <Typography>Hi</Typography>
+      <Typography classes={{root: classes.text}}>Hi</Typography>
     </Paper>
   )
 }
