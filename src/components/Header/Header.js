@@ -18,6 +18,8 @@ const styles =  makeStyles(theme=>({
     headerText: {
         border: '16px solid white',
         padding: '32px',
+        fontStyle: 'bold',
+        fontWeight: 'bold',
         color: 'white',
         maxWidth: '80%',
         marginBottom: '2%',
@@ -41,8 +43,8 @@ function Header(props){
             root: classes.navbar
         }}>
             <CssBaseline />
-            <Typography classes= {{root: classes.headerText}}className="customfont flex items-center justify-between p-24" fontStyle="bold" variant='h1'>MALHAR TELI</Typography>
-            <Typography className="customfont flex items-center justify-between p-24" fontStyle="bold" variant='h5'>Full Stack Engineer</Typography>
+            <Typography classes= {{root: classes.headerText}}className="flex items-center justify-between p-24" variant='h1'>MALHAR TELI</Typography>
+            <Typography className="flex items-center justify-between p-24" fontWeight="bold" variant='h5'>Full Stack Engineer</Typography>
             <Container classes={{root:classes.linkBar}}>
                 <Link color='inherit' underline='hover' href='mailto:malhar.teli@gmail.com'>malhar.teli@gmail.com</Link>
                 <Link color='inherit' underline='hover'

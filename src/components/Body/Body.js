@@ -1,5 +1,7 @@
 import React from 'react'
 import Paper from '@material-ui/core/Paper'
+import Container from '@material-ui/core/Container'
+import Box from '@material-ui/core/Box'
 import {makeStyles} from '@material-ui/styles'
 
 const styles = makeStyles(theme=>({
@@ -11,11 +13,11 @@ const styles = makeStyles(theme=>({
 function Body(props){
     const classes = styles();
     return(
-        <Paper fixed classes={{
+        <Box fixed classes={{
             root: classes.base
         }}>
             {props.children}
-        </Paper>
+        </Box>
     )
 }
 
