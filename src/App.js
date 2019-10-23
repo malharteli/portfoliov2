@@ -4,6 +4,7 @@ import Image from './components/Gallery/Image'
 import Header from './components/Header/Header'
 import Sidebar from './components/Sidebar/Sidebar'
 import Body from './components/Body/Body'
+import Resume from './components/Resume/Resume'
 import {MuiThemeProvider, createMuiTheme} from '@material-ui/core'
 import MontserratMedium from './fonts/Montserrat-Medium.ttf'
 import MontserratBold from './fonts/Montserrat-Bold.ttf'
@@ -75,7 +76,7 @@ function App() {
     <div className="App">
       <Body>
         <Sidebar />
-        <Image image='test'/>
+        <Resume />
       </Body>
     </div>
     </MuiThemeProvider>
