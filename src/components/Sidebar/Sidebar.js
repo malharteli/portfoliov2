@@ -1,5 +1,11 @@
 import React from 'react'
-import {Paper, Typography, Container, Box, Link} from '@material-ui/core'
+// import {Typography, Container, Box, Link} from
+import Typography from '@material-ui/core/Typography'
+import Container from '@material-ui/core/Container'
+import Box from '@material-ui/core/Box'
+import Link from '@material-ui/core/Link'
+
+
 import {makeStyles} from '@material-ui/styles'
 
 
@@ -44,7 +50,7 @@ function Sidebar(props){
             <Typography>Technical: React/Redux, Java, Xcode, Node, PostrgreSQL, Firebase/FireStore</Typography>
             <Typography>Creative: Unreal Engine 4, Unity, Photoshop, Illustrator, After Effects, Maya, Zbrush</Typography>
             <Typography>Professional: Git, GitHub, Atlassian, Trello, Slack, Scrumm, Microsoft Office Suit</Typography>
-          </Box> 
+          </Box>
           <Box classes={{root:classes.infobox}}>
             <Box fontWeight='bold' fontSize={20}>CONTACT ME:</Box>
             <Typography>Mobile: (617) 678-4014</Typography>
@@ -53,7 +59,7 @@ function Sidebar(props){
             <Typography>LinkedIn: <Link color='inherit' underline='hover'
                 href='https://linkedin.com/in/malharteli'>linkedin.com/in/malharteli</Link></Typography>
             <Typography>GitHub: <Link color='inherit' underline='hover' href='https://github.com/malharteli/'>github.com/malharteli/</Link></Typography>
-          </Box> 
+          </Box>
           <Box classes={{root:classes.infobox}}>
             <Box fontWeight='bold' fontSize={20}>PERSONAL SKILLS</Box>
             <Typography component='ul'>

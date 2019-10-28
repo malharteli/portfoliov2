@@ -1,5 +1,14 @@
 import React from 'react'
-import {Paper, Typography, Container, Link, CssBaseline} from '@material-ui/core'
+// import {Paper, Typography, Container, Link, CssBaseline} from '@material-ui/core'
+import Paper from '@material-ui/core/Paper'
+import Typography from '@material-ui/core/Typography'
+import Container from '@material-ui/core/Container'
+import Link from '@material-ui/core/Link'
+
+
+
+
+
 import {makeStyles} from '@material-ui/styles'
 
 const styles =  makeStyles(theme=>({
@@ -42,7 +51,6 @@ function Header(props){
         <Paper classes={{
             root: classes.navbar
         }}>
-            <CssBaseline />
             <Typography classes= {{root: classes.headerText}}className="flex items-center justify-between p-24" variant='h1'>MALHAR TELI</Typography>
             <Typography className="flex items-center justify-between p-24" fontWeight="bold" variant='h5'>Full Stack Engineer</Typography>
             <Container classes={{root:classes.linkBar}}>
