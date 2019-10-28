@@ -1,12 +1,14 @@
 import React from 'react'
-import Paper from '@material-ui/core/Paper'
-import Container from '@material-ui/core/Container'
 import Box from '@material-ui/core/Box'
 import {makeStyles} from '@material-ui/styles'
 
 const styles = makeStyles(theme=>({
     base: {
         display:'flex',
+        flexDirection: 'row',
+        [theme.breakpoints.down('md')]:{
+            flexDirection: 'column-reverse',
+        }
     }
 }))
 

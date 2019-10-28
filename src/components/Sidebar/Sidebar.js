@@ -14,14 +14,17 @@ const styles = makeStyles(theme =>({
     display:'flex',
     backgroundColor: 'rgba(122,180,193, 0.3)',
     zIndex:5,
+    padding:"5px",
     // opacity: '0.3',
     width: '25%',
     [theme.breakpoints.down('md')]:{
-      width: '0px',
-      display:'none'
+      width: '100%',
+      // display:'none'
     }
   },
   infobar:{
+    padding:'5px',
+    maxWidth: '90%',
     display: 'flex',
     'flex-direction': 'column',
     // 'align-items':'center',
